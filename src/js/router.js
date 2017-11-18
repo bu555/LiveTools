@@ -18,14 +18,16 @@ import CshopcartOrder from '../component/shopcart/order.vue';
 // 导入user组件
 import CuserLogin from '../component/user/login.vue';
 
-import CtbList from '../component/todayBefore/tb_list.vue'
-import CtbDetails from '../component/todayBefore/tb_details.vue'
+import CtbList from '../component/todayBefore/tb_list.vue';
+import CtbDetails from '../component/todayBefore/tb_details.vue';
 
 //http vue-rosource
-import Chttp from '../component/http_demo/http_demo.vue'
+import Chttp from '../component/http_demo/http_demo.vue';
 
 //bazi
-import CbaziHome from '../component/bazi/bazi_home.vue'
+import CbaziHome from '../component/bazi/bazi_home.vue';
+//calendar测试
+import CcalendarT from '../component/calendarTest/calendar_test.vue';
 
 // 导出一个路由实例
 export default new VueRouter({
@@ -62,6 +64,8 @@ export default new VueRouter({
         { path:'/http_demo/http_demo',component:Chttp,name:'httpD'},
 
         //bz
-        { path:'/bazi/bazi_home',component:CbaziHome,name:'baziH'}
+        { path:'/bazi/bazi_home',component:CbaziHome,name:'baziH'},
+        //calendar测试
+        { path:'/calendarTest/calendar_test',component:CcalendarT,name:'calendarT'},
     ]
 });

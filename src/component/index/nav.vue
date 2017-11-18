@@ -35,7 +35,7 @@
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
             <router-link to="/">
                 <span class="mui-icon mui-icon-phone"></span>
-                <div class="mui-media-body">联系我们</div>
+                <div class="mui-media-body">calendar测试</div>
                 </router-link></li>
         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
             <router-link to="/">

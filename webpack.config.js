@@ -95,7 +95,14 @@ module.exports = {
                 use: [
                     'vue-loader'
                 ]
-            }
+            },
+            //使用mvui
+
+            {   
+                test: /node_modules\\mvui\/.*?js$/,         
+                loader: 'babel' 
+            },// for Windows
+
         ]
     }
 };

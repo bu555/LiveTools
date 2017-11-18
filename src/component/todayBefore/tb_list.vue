@@ -21,14 +21,15 @@ import Ctitle from '../common/title.vue';
         data(){
             return{
                 initData:[],
-                title:"历史上的今天"
+                title:"历史上的今天",
+                date:""
             }
         },
         methods:{
             getData(){
                 this.$http.jsonp("http://v.juhe.cn/todayOnhistory/queryEvent.php",{params:{
                     key:"d06d39435c4f8f5e77f48d09fa8d3848",
-                    date:"4/30",
+                    date:this.date,
                 } }).then(function(res){
                     if(res.status == 200 && res.ok){
                         this.initData = res.body.result;
@@ -40,6 +41,8 @@ import Ctitle from '../common/title.vue';
             }
         },
         created(){
+            let d = new Date();
+            this.date = (d.getMonth()+1)+"/"+(d.getDate());
             this.getData();
         },
         components:{
